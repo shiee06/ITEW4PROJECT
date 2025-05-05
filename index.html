@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Philippine Art Gallery</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg artistic-navbar sticky-top shadow-sm">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            🎨 <span class="brand-text">Philippine Art Gallery</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="artists.html">Artists</a></li>
+              <li class="nav-item"><a class="nav-link" href="artworks.html">Artworks</a></li>
+              <li class="nav-item"><a class="nav-link" href="movements.html">Movements</a></li>
+              <li class="nav-item"><a class="nav-link" href="museums.html">Museums</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+  <header class="hero-section text-center text-white d-flex align-items-center" style="background: url('https://wallpaperaccess.com/full/2314559.jpg') no-repeat center center/cover;">
+    <div class="container">
+        <h1 class="display-4 fw-bold">Honoring the Vibrant Legacy of Philippine Art</h1>
+        <p class="lead">Discover the depth of Filipino creativity and the diverse expressions of its cultural heritage.</p>        
+      <a href="artworks.html" class="minimalist-btn-lg">Explore Artworks</a>
+    </div>
+  </header>
+<section class="py-5 bg-light text-center">
+  <div class="container">
+    <h2 class="section-title mb-5">Featured Filipino Artists</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card minimalist-card h-100 d-flex flex-column">
+          <img src="https://cdn.tatlerasia.com/tatlerasia/i/2021/10/12091512-18159359816-92de92d368-o_cover_1199x1363.jpg" class="card-img-top" alt="Fernando Amorsolo">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Fernando Amorsolo</h5>
+            <p class="card-text flex-grow-1">Known as the "Grand Old Man of Philippine Art," his works highlight Filipino rural life with lush landscapes.</p>
+            <a href="amorsolo.html" class="btn minimalist-btn mt-auto">Artist Details</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card minimalist-card h-100 d-flex flex-column">
+          <img src="https://images.summitmedia-digital.com/esquiremagph/images/2017/01/20/juan.png" class="card-img-top" alt="Juan Luna">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Juan Luna</h5>
+            <p class="card-text flex-grow-1">A revolutionary artist known for his dramatic paintings like "Spoliarium," which depict Filipino nationalism.</p>
+            <a href="juan-luna.html" class="btn minimalist-btn mt-auto">Artist Details</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card minimalist-card h-100 d-flex flex-column">
+          <img src="https://cdn.tatlerasia.com/tatlerasia/i/2021/11/16092514-18445918581-a3e5100531-o-1_cover_1094x1189.jpg" class="card-img-top" alt="Carlos Francisco">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Carlos Francisco</h5>
+            <p class="card-text flex-grow-1">Renowned muralist and National Artist, Carlos Francisco captured Filipino history and heroism through vibrant storytelling in art.</p>
+            <a href="carlos-francisco.html" class="btn minimalist-btn mt-auto">Artist Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <section class="py-5 bg-light">
+    <div class="container">
+      <p class="text-center mx-auto" style="max-width: 700px;">
+        The Philippine Art Gallery is a curated digital space dedicated to preserving and promoting Filipino artistic excellence. From historical masterpieces to contemporary expressions, we aim to educate and inspire through art.
+      </p>
+    </div>
+  </section>
+
+
+<footer class="footer-minimal text-center">
+    <div class="container">
+      <div class="footer-logo">Philippine Art Gallery</div>  
+  
+      <div class="social-icons">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-envelope-fill"></i></a>
+      </div>
+  
+      <div class="footer-bottom">
+        &copy; 2025 Philippine Art Gallery.
+      </div>
+    </div>
+  </footer>
+  
+
+  <button onclick="scrollToTop()" class="scroll-top" id="scrollTopBtn" title="Back to Top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <script>
+    const btn = document.getElementById("scrollTopBtn");
+    window.onscroll = function () {
+      btn.style.display = (document.documentElement.scrollTop > 200) ? "block" : "none";
+    };
+    function scrollToTop() {
+      document.documentElement.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>

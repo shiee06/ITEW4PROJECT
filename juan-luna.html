@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Juan Luna - Philippine Art Gallery</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .hero-section {
+      background: url('https://images.summitmedia-digital.com/esquiremagph/images/2017/01/20/juan.png') no-repeat center center/cover;
+      height: 400px;
+      color: white;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-size: cover;
+      position: relative;
+    }
+    .hero-section h1 {
+      font-size: 3rem;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+      z-index: 1;
+    }
+    .hero-section::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      top: 0;
+      left: 0;
+    }
+    footer {
+      background-color: #343a40;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+    .back-button { background-color: #ff6f61; color: white; font-weight: bold; padding: 10px 20px; text-decoration: none; border-radius: 5px; }
+    .back-button:hover { background-color: #f44336; }    
+   
+  </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg artistic-navbar sticky-top shadow-sm">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            🎨 <span class="brand-text">Philippine Art Gallery</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="artists.html">Artists</a></li>
+              <li class="nav-item"><a class="nav-link" href="artworks.html">Artworks</a></li>
+              <li class="nav-item"><a class="nav-link" href="movements.html">Movements</a></li>
+              <li class="nav-item"><a class="nav-link" href="museums.html">Museums</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+  <section class="hero-section">
+    <h1>Juan Luna</h1>
+  </section>
+  <section class="container py-5">
+    <h2 class="section-title">About Juan Luna</h2>
+    <div class="row">
+      <div class="col-lg-6 artist-details">
+        <img src="https://images.summitmedia-digital.com/esquiremagph/images/2017/01/20/juan.png" alt="Juan Luna" class="img-fluid mb-4">
+        <p class="artist-description"><strong>Known For:</strong> Nationalism and grand historical scenes. Juan Luna was one of the greatest Filipino painters and revolutionaries. His famous painting <em>Spoliarium</em> earned international acclaim and symbolized the struggle and dignity of the Filipino people under Spanish rule.</p>
+        <p class="artist-description">Luna’s academic style and powerful themes made his works emotionally intense and culturally significant. He was also involved in the Philippine reform movement alongside José Rizal and Marcelo H. del Pilar, using his art as a platform for national identity.</p>
+      </div>
+      <div class="col-lg-6">
+        <div class="artist-description">
+          <h5 class="text-center">Featured Paintings</h5>
+          <ul>
+            <li><strong>Spoliarium</strong> – His magnum opus and a symbol of Filipino resistance and grief.</li>
+            <li><strong>The Blood Compact</strong> – A historical depiction of the Sandugo ritual between Datu Sikatuna and Miguel López de Legazpi.</li>
+            <li><strong>Death of Cleopatra</strong> – Award-winning painting in the Madrid Exposition of Fine Arts.</li>
+          </ul>
+          <p>Luna’s artistry helped ignite patriotism and inspired future generations of Filipino artists. His works remain permanently exhibited in museums like the National Museum of Fine Arts in Manila.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="text-center py-4">
+    <a href="artists.html" class="back-button"><i class="bi bi-arrow-left-circle"></i> Back to Artists</a>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anita Magsaysay-Ho - Philippine Art Gallery</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .hero-section {
+      background: url('https://2.bp.blogspot.com/-tlR5gS3g-To/WaZN0wd5Y6I/AAAAAAAEC-c/nn2yJVh4SZ4v5Mn3v9aS2QeQ_ap7RsG2ACLcBGAs/s1600/Anita%2BMagsaysay-Ho-photo01.jpgg') no-repeat center center/cover;
+      height: 400px;
+      color: white;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-size: cover;
+      position: relative;
+    }
+    .hero-section h1 {
+      font-size: 3rem;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+      z-index: 1;
+    }
+    .hero-section::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      top: 0;
+      left: 0;
+    }
+    footer {
+      background-color: #343a40;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+    .back-button { background-color: #ff6f61; color: white; font-weight: bold; padding: 10px 20px; text-decoration: none; border-radius: 5px; }
+    .back-button:hover { background-color: #f44336; }    
+   
+  </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg artistic-navbar sticky-top shadow-sm">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            🎨 <span class="brand-text">Philippine Art Gallery</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="artists.html">Artists</a></li>
+              <li class="nav-item"><a class="nav-link" href="artworks.html">Artworks</a></li>
+              <li class="nav-item"><a class="nav-link" href="movements.html">Movements</a></li>
+              <li class="nav-item"><a class="nav-link" href="museums.html">Museums</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+  <section class="hero-section">
+    <h1>Anita Magsaysay-Ho</h1>
+  </section>
+
+  <section class="container py-5">
+    <h2 class="section-title">About Anita Magsaysay-Ho</h2>
+    <div class="row">
+      <div class="col-lg-6 artist-details">
+        <img src="https://2.bp.blogspot.com/-tlR5gS3g-To/WaZN0wd5Y6I/AAAAAAAEC-c/nn2yJVh4SZ4v5Mn3v9aS2QeQ_ap7RsG2ACLcBGAs/s1600/Anita%2BMagsaysay-Ho-photo01.jpgg" alt="Anita Magsaysay-Ho" class="img-fluid mb-4">
+        <p class="artist-description"><strong>Known For:</strong> Figurative Expressionism, modern depictions of Filipino women. Anita Magsaysay-Ho was one of the first female National Artists in the Philippines, known for her works that highlight the everyday life of women in rural settings.</p>
+        <p class="artist-description">Her works, often filled with vibrant colors, feature strong, expressive figures, capturing the resilience and beauty of Filipino women, especially in agricultural and domestic settings.</p>
+      </div>
+      <div class="col-lg-6">
+        <div class="artist-description">
+          <h5 class="text-center">Featured Paintings</h5>
+          <ul>
+            <li><strong>Woman with Fruits</strong> - A dynamic portrayal of Filipino women with fruits, symbolizing abundance and strength.</li>
+            <li><strong>Harvesting Women</strong> - A vivid depiction of women working in the fields, celebrating their role in the Philippine agrarian society.</li>
+            <li><strong>The Laundress</strong> - Showcasing the domestic duties of women in a powerful yet graceful manner.</li>
+          </ul>
+          <p>Magsaysay-Ho’s art is characterized by vivid colors, dynamic forms, and the representation of women in rural and domestic settings, capturing their grace, strength, and importance in Filipino society.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="text-center py-4">
+    <a href="artists.html" class="back-button"><i class="bi bi-arrow-left-circle"></i> Back to Artists</a>
+  </section>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
